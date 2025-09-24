@@ -58,3 +58,12 @@ export default async function Home({ params }: Props) {
     </main>
   );
 }
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("title"),
+  };
+}
