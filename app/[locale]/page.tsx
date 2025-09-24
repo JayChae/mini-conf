@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "../_components/Hero";
 import Schedule from "../_components/Schedule";
 import Speakers from "../_components/Speakers";
@@ -15,6 +15,8 @@ export default async function Home({ params }: Props) {
   const tSpeakers = await getTranslations("Speakers");
   const tSchedule = await getTranslations("Schedule");
   const tSponsor = await getTranslations("Sponsor");
+
+  setRequestLocale(locale);
 
   return (
     <main className="size-full overflow-y-auto px-8 pb-10 z-10">
