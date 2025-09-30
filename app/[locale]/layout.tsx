@@ -9,6 +9,11 @@ import { navItems } from "../messages";
 
 import DarkVeil from "../_components/DarkVeil";
 import Nav from "../_components/Nav";
+import localFont from "next/font/local";
+
+const pretendardFont = localFont({
+  src: "../../public/fonts/PretendardVariable.woff2",
+});
 
 export const metadata: Metadata = {
   title: "Bitcoin Mini Conference",
@@ -51,7 +56,7 @@ export default async function RootLayout({ children, params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className="size-full">
+    <html lang={locale} className={`size-full ${pretendardFont.className}`}>
       <body
         className={`antialiased size-full relative overflow-y-auto bg-black`}
       >
