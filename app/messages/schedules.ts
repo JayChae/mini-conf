@@ -55,4 +55,4 @@ const schedules = {
   en: enSchedules,
 };
 
-export default schedules;
+export { schedules };

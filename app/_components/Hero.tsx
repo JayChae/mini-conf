@@ -3,7 +3,6 @@ import Link from "next/link";
 import { type TicketButton } from "../messages/tickets";
 import BlurText from "@/components/BlurText";
 import ShinyText from "@/components/ShinyText";
-import Attendees from "./Attendees";
 
 type Props = {
   title: string;

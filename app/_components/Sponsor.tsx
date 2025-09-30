@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import sponsors, { type Sponsor } from "../messages/sponsors";
-import ShinyText from "@/components/ShinyText";
-import GradientText from "@/components/GradientText";
+import { sponsors, type Sponsor } from "../messages/sponsors";
 import { cn } from "@/lib/utils";
 
 type SponsorTier = {

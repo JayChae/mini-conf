@@ -38,4 +38,4 @@ const attendees = {
   en: enItems,
 };
 
-export default attendees;
+export { attendees };

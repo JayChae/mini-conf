@@ -40,4 +40,4 @@ const tickets = {
   en: enTickets,
 };
 
-export default tickets;
+export { tickets };

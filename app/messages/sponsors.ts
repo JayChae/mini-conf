@@ -47,4 +47,4 @@ const sponsors: {
   individual: [],
 } as const;
 
-export default sponsors;
+export { sponsors };

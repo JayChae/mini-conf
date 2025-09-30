@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import DarkVeil from "../_components/DarkVeil";
-import Nav from "../_components/Nav";
+
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
-import navItems from "../messages/nav";
+import { navItems } from "../messages";
+
+import DarkVeil from "../_components/DarkVeil";
+import Nav from "../_components/Nav";
 
 export const metadata: Metadata = {
   title: "Bitcoin Mini Conference",

@@ -25,4 +25,4 @@ const navItems = {
   ko: koItems,
 };
 
-export default navItems;
+export { navItems };

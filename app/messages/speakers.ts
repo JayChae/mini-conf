@@ -477,4 +477,4 @@ const speakers = {
   en: enItems,
 };
 
-export default speakers;
+export { speakers };

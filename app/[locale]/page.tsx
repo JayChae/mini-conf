@@ -1,15 +1,14 @@
 import { getTranslations } from "next-intl/server";
+import { speakers, schedules, tickets, attendees } from "../messages";
+
 import Hero from "../_components/Hero";
 import Schedule from "../_components/Schedule";
 import Speakers from "../_components/Speakers";
 import Sponsor from "../_components/Sponsor";
 import Divider from "../_components/Divider";
-import speakers from "../messages/speakers";
-import schedules from "../messages/schedules";
-import tickets from "../messages/tickets";
-import attendees from "../messages/attendees";
 import Section from "../_components/Section";
 import Attendees from "../_components/Attendees";
+
 type Props = {
   params: Promise<{ locale: string }>;
 };
